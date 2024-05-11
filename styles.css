@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: pink;
+  text-align: center;
+  padding: 20px 0;
+}
+
+main {
+  padding: 20px;
+}
+
+#message {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#flowers {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  background-color: pink;
+  text-align: center;
+  padding: 10px 0;
+}
