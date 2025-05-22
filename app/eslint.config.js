@@ -5,6 +5,7 @@ import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
 import reactX from "eslint-plugin-react-x";
 import reactDom from "eslint-plugin-react-dom";
+import pluginRouter from "@tanstack/eslint-plugin-router";
 
 export default tseslint.config(
   { ignores: ["dist"] },
@@ -28,6 +29,7 @@ export default tseslint.config(
       "react-refresh": reactRefresh,
       "react-x": reactX,
       "react-dom": reactDom,
+      "@tanstack/router": pluginRouter,
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
@@ -37,6 +39,7 @@ export default tseslint.config(
       ],
       ...reactX.configs["recommended-typescript"].rules,
       ...reactDom.configs.recommended.rules,
+      "@tanstack/router/create-route-property-order": "error",
     },
   },
 );

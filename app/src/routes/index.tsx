@@ -1,8 +1,13 @@
+import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ModeToggle } from "./components/theme/ModeToggle";
+import { ModeToggle } from "@/components/theme/ModeToggle";
 
-function App() {
+export const Route = createFileRoute("/")({
+  component: Index,
+});
+
+function Index() {
   const [count, setCount] = useState(0);
 
   return (
@@ -22,5 +27,3 @@ function App() {
     </main>
   );
 }
-
-export default App;
